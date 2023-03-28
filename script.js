@@ -10,7 +10,6 @@ btnRight.addEventListener('click', () => {
     courent = 0;
   }
   slider();
-  console.log(courent);
 });
 
 btnleft.addEventListener('click', () => {
