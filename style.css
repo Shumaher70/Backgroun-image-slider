@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #193549;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container-slider {
+  position: relative;
+  background-position: center;
+  border: 10px solid #490b19;
+  height: 70vh;
+  width: 70vw;
+  overflow: hidden;
+}
+.slider_box-imgs {
+  display: flex;
+  height: 100%;
+  transition: 1s;
+}
+
+.img {
+  object-fit: cover;
+  min-width: 100%;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 70px;
+  color: #490b19;
+  cursor: pointer;
+  transition: 0.4s linear;
+  opacity: 0.9;
+}
+
+.btn.slider_btn-left {
+  left: -1px;
+}
+
+.btn.slider_btn-left:active {
+  left: -50px;
+}
+
+.btn.slider_btn-right {
+  right: -1px;
+}
+
+.btn.slider_btn-right:active {
+  right: -50px;
+}
